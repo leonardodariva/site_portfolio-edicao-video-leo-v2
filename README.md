@@ -1,6 +1,6 @@
-# Leonardo Dariva — protótipo independente
+# Leonardo Dariva — portfólio V2
 
-Esta é uma primeira versão funcional e independente do portfólio, criada porque nenhum checkout ou repositório do projeto “portfólio de edição de vídeos” estava disponível neste workspace.
+Conceito editorial com direção japonesa sombria, tipografia condensada, preto e vermelho. Esta V2 tem [repositório próprio](https://github.com/leonardodariva/site_portfolio-edicao-video-leo-v2); a versão anterior permanece separada.
 
 ## Visualização local
 
@@ -12,11 +12,11 @@ python3 -m http.server 3000 --directory dist
 
 Depois abra `http://localhost:3000`.
 
-## Integração no projeto real
+## Conteúdo e integração
 
-1. Copie o conteúdo de `dist/` para a pasta pública do portfólio.
-2. Substitua os placeholders de `media-card` pelos vídeos e artes reais, preservando `aspect-ratio` 9:16, 16:9 e 1:1.
+1. Publique `dist/` como site estático.
+2. O primeiro Reel usa um vídeo demonstrativo já presente nos arquivos do portfólio anterior. Os demais cards são composições de demonstração. Substitua-os por trabalhos confirmados, preservando `aspect-ratio` 9:16, 16:9 e 1:1.
 3. Os botões de contato e o briefing abrem o aplicativo de e-mail do visitante. Caso queira envio direto no site, conecte `#contact-form` a um serviço de formulário.
 4. Mantenha `assets/pagoda-hero.png` como background do hero ou troque por um asset próprio com direitos de uso.
 
-Os textos e cards demonstrativos estão marcados como demo/placeholder e não afirmam clientes, métricas ou credenciais.
+Os cards demonstrativos estão identificados como demo e não afirmam clientes, métricas ou credenciais.
