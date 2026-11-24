@@ -6,10 +6,13 @@
     <meta name="theme-color" content="#080809" />
     <meta name="description" content="Portfólio de edição de vídeo, motion design e design gráfico de Leonardo Dariva." />
     <title>Leonardo Dariva — Visual Stories</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=5" />
+    <link rel="alternate" hreflang="pt-BR" href="./index.html" />
+    <link rel="alternate" hreflang="en" href="./en.html" />
+    <link rel="preload" href="./assets/fonts/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/fonts/ZenKakuGothicNew-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/fonts/ZenKakuGothicNew-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/fonts/ZenOldMincho-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./styles.css?v=19" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
@@ -18,62 +21,60 @@
     <header class="site-header shell">
       <a class="brand" href="#top" aria-label="Leonardo Dariva — início">
         <span class="brand-mark">LD</span>
-        <span class="brand-copy">Leonardo Dariva<span>Edição de vídeo / 映像</span></span>
+        <span class="brand-copy">Leonardo Dariva<span>Editor de vídeo</span></span>
       </a>
       <nav class="main-nav" aria-label="Navegação principal">
         <a href="#work">Trabalhos <span>作品集</span></a>
         <a href="#contact">Contato <span>連絡</span></a>
       </nav>
-      <span class="header-index">PORTFÓLIO / 2026</span>
+      <nav class="language-nav" aria-label="Idioma">
+        <a href="./index.html" hreflang="pt-BR" lang="pt-BR" aria-label="Português do Brasil" aria-current="page"><img src="./assets/icons/flag-br.svg" alt="" width="16" height="12" /></a>
+        <a href="./en.html" hreflang="en" lang="en" aria-label="English"><img src="./assets/icons/flag-gb.svg" alt="" width="16" height="12" /></a>
+      </nav>
     </header>
 
     <main id="main-content">
       <section class="hero shell" id="top" aria-labelledby="hero-title">
-        <div class="hero-temple" aria-hidden="true"></div>
         <div class="hero-content">
           <div class="hero-topline">
             <span class="eyebrow"><i></i> Disponível para novos projetos</span>
-            <span class="hero-location">映像 / VISUAL STORIES</span>
+            <span class="hero-location">映像 / PORTFÓLIO 2026</span>
           </div>
           <p class="hero-intro">Editor de vídeo · Motion designer · Designer gráfico</p>
           <h1 id="hero-title">Cortes que<br />prendem<span class="hero-accent"> até o fim.</span></h1>
           <div class="hero-bottom">
             <p class="hero-summary">Edição de vídeo, motion e design gráfico para contar histórias com ritmo, intenção e impacto.</p>
             <div class="hero-actions" aria-label="Ações de contato">
-              <a class="button button-primary" href="mailto:leodarivask@gmail.com?subject=Novo%20projeto%20%E2%80%94%20portf%C3%B3lio">Trabalhe comigo <span>↗</span></a>
-              <a class="button button-ghost" href="mailto:leodarivask@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio">Entre em contato <span>↗</span></a>
+              <a class="button button-primary" href="mailto:ohnardosk@gmail.com?subject=Novo%20projeto%20%E2%80%94%20portf%C3%B3lio">Trabalhe comigo <span class="button-icon icon-clapperboard" aria-hidden="true"></span></a>
+              <a class="button button-ghost" href="mailto:ohnardosk@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio">Entre em contato <span class="button-icon icon-at-sign" aria-hidden="true"></span></a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="work-intro shell" id="work" aria-labelledby="work-title">
-        <div class="section-meta"><span>作品集 / SELECTED WORK</span></div>
-        <div class="work-heading">
-          <h2 id="work-title">Trabalhos <span>selecionados.</span></h2>
+      <section class="portfolio-section shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div><span class="section-number">01 / 映像作品</span><h2 id="work-title">Shorts <span>&amp; Reels</span></h2></div>
+          <span class="format-label">FORMATO<br /><strong>9:16</strong></span>
         </div>
-      </section>
-
-      <section class="portfolio-section shell" aria-label="Vídeos verticais: Shorts e Reels">
         <div class="media-grid media-grid-vertical">
           <button class="media-card media-card-vertical tone-reel" type="button" aria-label="Reproduzir Reel 01, vídeo demonstrativo" data-title="Reel 01 · Demonstração" data-description="Vídeo demonstrativo vertical, utilizado para testar a apresentação da peça." data-video="./assets/reel-01.mp4">
-            <span class="media-visual"><img class="media-poster" src="./assets/reel-01-poster.png" alt="" loading="lazy" /><span class="play-icon" aria-hidden="true">▶</span><span class="media-word">REEL<br />01</span></span>
-            <span class="media-card-footer"><span>Reel 01 / demo</span><span>↗</span></span>
+            <span class="media-visual"><img class="media-poster" src="./assets/reel-01-poster.webp" alt="" loading="lazy" /><span class="play-icon" aria-hidden="true">▶</span><span class="media-word">REEL<br />01</span></span>
+            <span class="media-card-footer"><span>Reel 01 / demo</span><span aria-hidden="true">▶</span></span>
           </button>
           <button class="media-card media-card-vertical tone-paper" type="button" aria-label="Abrir demonstração Shorts e Reels 02" data-title="Shorts & Reels 02" data-description="Placeholder vertical 02 — a proporção 9:16 é preservada neste layout.">
             <span class="media-visual"><span class="media-stamp">REC<br /><small>09:16</small></span><span class="media-word">CUT<br />THROUGH</span></span>
-            <span class="media-card-footer"><span>Demo / vertical</span><span>↗</span></span>
+            <span class="media-card-footer"><span>Demo / vertical</span><span aria-hidden="true">▶</span></span>
           </button>
           <button class="media-card media-card-vertical tone-ink" type="button" aria-label="Abrir demonstração Shorts e Reels 03" data-title="Shorts & Reels 03" data-description="Placeholder vertical 03 — pronto para receber sua mídia real sem distorção.">
             <span class="media-visual"><span class="media-kanji">映</span><span class="media-word">MOTION<br />STUDY</span></span>
-            <span class="media-card-footer"><span>Demo / vertical</span><span>↗</span></span>
+            <span class="media-card-footer"><span>Demo / vertical</span><span aria-hidden="true">▶</span></span>
           </button>
           <button class="media-card media-card-vertical tone-red" type="button" aria-label="Abrir demonstração Shorts e Reels 04" data-title="Shorts & Reels 04" data-description="Placeholder vertical 04 — espaço para um vídeo real em formato 9:16.">
             <span class="media-visual"><span class="media-orbit"></span><span class="media-word">FRAME<br />04</span></span>
-            <span class="media-card-footer"><span>Demo / vertical</span><span>↗</span></span>
+            <span class="media-card-footer"><span>Demo / vertical</span><span aria-hidden="true">▶</span></span>
           </button>
         </div>
-        <p class="section-caption">Conteúdo demonstrativo · clique em qualquer peça para visualizar o estado de apresentação.</p>
       </section>
 
       <section class="portfolio-section shell horizontal-section" aria-labelledby="long-title">
@@ -84,14 +85,13 @@
         <div class="media-grid media-grid-horizontal">
           <button class="media-card media-card-horizontal tone-copper" type="button" aria-label="Abrir demonstração Long Form 01" data-title="Long Form 01" data-description="Placeholder horizontal 01 — pronto para um filme, entrevista ou projeto institucional real.">
             <span class="media-visual"><span class="horizontal-sun"></span><span class="media-word">A STORY<br />IN MOTION</span><span class="media-corner">16:9 / DEMO</span></span>
-            <span class="media-card-footer"><span>Demo / long form</span><span>↗</span></span>
+            <span class="media-card-footer"><span>Demo / long form</span><span aria-hidden="true">▶</span></span>
           </button>
           <button class="media-card media-card-horizontal tone-blue" type="button" aria-label="Abrir demonstração Long Form 02" data-title="Long Form 02" data-description="Placeholder horizontal 02 — o quadro mantém a leitura widescreen sem recortes improvisados.">
             <span class="media-visual"><span class="horizontal-bars"></span><span class="media-word">SLOW<br />BURN</span><span class="media-corner">16:9 / DEMO</span></span>
-            <span class="media-card-footer"><span>Demo / long form</span><span>↗</span></span>
+            <span class="media-card-footer"><span>Demo / long form</span><span aria-hidden="true">▶</span></span>
           </button>
         </div>
-        <p class="section-caption">Conteúdo demonstrativo · substitua pelos seus vídeos horizontais reais quando o projeto for integrado.</p>
       </section>
 
       <section class="portfolio-section shell design-section" aria-labelledby="design-title">
@@ -102,53 +102,61 @@
         <div class="media-grid media-grid-square">
           <button class="media-card media-card-square tone-yellow" type="button" aria-label="Abrir demonstração Graphic Design 01" data-title="Graphic Design 01" data-description="Placeholder quadrado 01 — uma tela reservada para peça gráfica real.">
             <span class="media-visual"><span class="square-label">FORM<br />&amp;<br />FUNCTION</span><span class="square-line"></span></span>
-            <span class="media-card-footer"><span>Demo / square</span><span>↗</span></span>
+            <span class="media-card-footer"><span>Demo / square</span><span aria-hidden="true">▶</span></span>
           </button>
           <button class="media-card media-card-square tone-pink" type="button" aria-label="Abrir demonstração Graphic Design 02" data-title="Graphic Design 02" data-description="Placeholder quadrado 02 — substitua por poster, identidade ou direção de arte real.">
             <span class="media-visual"><span class="square-circle"></span><span class="square-label">A NEW<br />ANGLE</span></span>
-            <span class="media-card-footer"><span>Demo / square</span><span>↗</span></span>
+            <span class="media-card-footer"><span>Demo / square</span><span aria-hidden="true">▶</span></span>
           </button>
           <button class="media-card media-card-square tone-green" type="button" aria-label="Abrir demonstração Graphic Design 03" data-title="Graphic Design 03" data-description="Placeholder quadrado 03 — o card mantém o formato 1:1 em todas as telas.">
             <span class="media-visual"><span class="square-grid"></span><span class="square-label">VISUAL<br />NOTES</span></span>
-            <span class="media-card-footer"><span>Demo / square</span><span>↗</span></span>
+            <span class="media-card-footer"><span>Demo / square</span><span aria-hidden="true">▶</span></span>
           </button>
         </div>
-        <p class="section-caption">Conteúdo demonstrativo · três espaços para posters, capas ou estudos gráficos do portfólio.</p>
       </section>
 
       <section class="contact-section shell" id="contact" aria-labelledby="contact-title">
         <div class="contact-mark" aria-hidden="true">連絡</div>
         <div class="contact-copy">
           <span class="section-number">04 / START A CONVERSATION</span>
-          <h2 id="contact-title">Vamos dar forma<br /><em>à sua ideia.</em></h2>
-          <p>Conte um pouco sobre o projeto. O briefing abre seu aplicativo de e-mail com a mensagem pronta para você revisar e enviar.</p>
+          <h2 id="contact-title"><span>Vamos dar forma</span><em>à sua ideia.</em></h2>
+          <ul class="contact-links" aria-label="Outros canais de contato">
+            <li><a href="https://www.linkedin.com/in/leonardodariva/"><span class="button-icon icon-linkedin" aria-hidden="true"></span><strong>LinkedIn:</strong> <span class="contact-handle">linkedin.com/in/leonardodariva</span></a></li>
+            <li><a href="mailto:ohnardosk@gmail.com"><span class="button-icon icon-mail-open" aria-hidden="true"></span><strong>E-mail:</strong> <span class="contact-handle">ohnardosk@gmail.com</span></a></li>
+          </ul>
         </div>
-        <form class="contact-form" id="contact-form">
+        <form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <div hidden><label>Deixe este campo vazio <input name="bot-field" tabindex="-1" autocomplete="off" /></label></div>
           <label>Seu nome<input name="name" type="text" autocomplete="name" placeholder="Como podemos te chamar?" required /></label>
           <label>Seu e-mail<input name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required /></label>
           <label>Sobre o projeto<textarea name="message" rows="4" placeholder="O que você gostaria de criar?" required></textarea></label>
-          <button class="button button-primary" type="submit">Abrir e-mail <span>↗</span></button>
+          <button class="button button-primary" type="submit">Enviar mensagem <span class="button-icon icon-mail-open" aria-hidden="true"></span></button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </section>
     </main>
 
     <footer class="site-footer shell">
-      <span>© Leonardo Dariva / Portfólio em construção</span>
-      <span>Feito para ideias que pedem movimento <b>↗</b></span>
+      <span>© Leonardo Dariva</span>
+      <span>Feito para ideias que pedem movimento <span class="footer-mark" aria-hidden="true">▶</span></span>
     </footer>
 
-    <dialog class="media-dialog" id="media-dialog" aria-labelledby="dialog-title">
+    <dialog class="media-dialog" id="media-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
       <div class="dialog-inner">
-        <button class="dialog-close" type="button" aria-label="Fechar apresentação">×</button>
-        <span class="section-number">DEMO / PREVIEW STATE</span>
-        <h2 id="dialog-title">Título do projeto</h2>
-        <p id="dialog-description">Descrição do projeto</p>
-        <video class="dialog-video" controls playsinline preload="metadata" poster="./assets/reel-01-poster.png" aria-label="Vídeo demonstrativo" hidden></video>
-        <div class="dialog-placeholder"><span>Sua peça visual<br />entra aqui</span><small>Espaço demonstrativo para o projeto real</small></div>
+        <button class="dialog-close" type="button" aria-label="Fechar apresentação"></button>
+        <div class="dialog-details">
+          <span class="section-number">DEMO / PREVIEW STATE</span>
+          <h2 id="dialog-title">Título do projeto</h2>
+          <p id="dialog-description">Descrição do projeto</p>
+        </div>
+        <div class="dialog-stage">
+          <video class="dialog-video" controls playsinline preload="metadata" poster="./assets/reel-01-poster.webp" aria-label="Vídeo demonstrativo" hidden></video>
+          <div class="dialog-placeholder"><span>Sua peça visual<br />entra aqui</span><small>Espaço demonstrativo para o projeto real</small></div>
+        </div>
       </div>
     </dialog>
 
-    <script src="./script.js?v=3"></script>
+    <script src="./script.js?v=6"></script>
   </body>
 </html>

@@ -20,7 +20,7 @@ document.querySelectorAll(".media-card").forEach((card) => {
 
 dialogClose.addEventListener("click", () => dialog.close());
 dialog.addEventListener("click", (event) => {
-  if (event.target === dialog) dialog.close();
+  if (event.target === dialog || event.target.matches(".dialog-inner, .dialog-stage")) dialog.close();
 });
 dialog.addEventListener("close", () => {
   dialogVideo.pause();
@@ -28,15 +28,41 @@ dialog.addEventListener("close", () => {
   dialogVideo.load();
 });
 
-document.querySelector("#contact-form").addEventListener("submit", (event) => {
+const contactForm = document.querySelector("#contact-form");
+const contactStatus = contactForm.querySelector(".form-status");
+const contactSubmit = contactForm.querySelector('button[type="submit"]');
+const contactMessages = document.documentElement.lang === "en"
+  ? {
+    sending: "Sending your message…",
+    success: "Message sent. Thanks for getting in touch!",
+    error: "Your message could not be sent. Try again or use the email address above.",
+  }
+  : {
+    sending: "Enviando sua mensagem…",
+    success: "Mensagem enviada. Obrigado pelo contato!",
+    error: "Não foi possível enviar a mensagem. Tente novamente ou use o e-mail acima.",
+  };
+
+contactForm.addEventListener("submit", async (event) => {
   event.preventDefault();
-  const data = new FormData(event.currentTarget);
-  const name = String(data.get("name") || "").trim();
-  const email = String(data.get("email") || "").trim();
-  const message = String(data.get("message") || "").trim();
-  const subject = encodeURIComponent(`Novo briefing — ${name}`);
-  const body = encodeURIComponent(`Nome: ${name}\nE-mail: ${email}\n\nProjeto:\n${message}`);
-  const status = document.querySelector(".form-status");
-  status.textContent = "Seu aplicativo de e-mail será aberto. Revise a mensagem e confirme o envio por lá.";
-  window.location.href = `mailto:leodarivask@gmail.com?subject=${subject}&body=${body}`;
+  if (contactSubmit.disabled) return;
+
+  const data = new URLSearchParams(new FormData(contactForm));
+  contactSubmit.disabled = true;
+  contactStatus.textContent = contactMessages.sending;
+
+  try {
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: data,
+    });
+    if (!response.ok) throw new Error("Form submission failed");
+    contactForm.reset();
+    contactStatus.textContent = contactMessages.success;
+  } catch {
+    contactStatus.textContent = contactMessages.error;
+  } finally {
+    contactSubmit.disabled = false;
+  }
 });
