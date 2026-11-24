@@ -23,4 +23,4 @@ Os cards demonstrativos estão identificados como demo e não afirmam clientes, 
 
 ## Publicação no Netlify
 
-Importe o repositório como um novo projeto. O arquivo netlify.toml indica a pasta dist como diretório de publicação, sem etapa de build. No painel do novo projeto, habilite a detecção em Forms e faça um deploy. Confirme que o formulário contact aparece no painel e configure a notificação por e-mail para um membro ativo da equipe. Faça um envio de teste no endereço Netlify e confira a notificação e o endereço de resposta. O servidor estático local não processa os envios.
+Importe o repositório como um novo projeto. O arquivo netlify.toml indica a pasta dist como diretório de publicação. O comando de build usa o endereço do projeto para gerar os links absolutos das capas de compartilhamento. No painel do novo projeto, habilite a detecção em Forms e faça um deploy. Confirme que o formulário contact aparece no painel e configure a notificação por e-mail para um membro ativo da equipe. Faça um envio de teste no endereço Netlify e confira a notificação e o endereço de resposta. O servidor estático local não processa os envios.
